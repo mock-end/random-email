@@ -1,0 +1,53 @@
+{
+  "name": "random-email",
+  "version": "1.0.0",
+  "description": "Generate a random email address.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "pretest": "npm run lint",
+    "test": "mocha -R spec",
+    "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
+    "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "domaon",
+    "tld",
+    "randomly",
+    "random",
+    "rand",
+    "sampling",
+    "generator",
+    "generate",
+    "gen",
+    "network",
+    "email",
+    "url",
+    "uri"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mock-end/random-email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mock-end/random-email/issues"
+  },
+  "homepage": "https://github.com/mock-end/random-email#readme",
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "random-domains": "1.0.0",
+    "random-lorem": "^1.0.0"
+  }
+}
