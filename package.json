@@ -1,7 +1,7 @@
 {
   "name": "random-email",
-  "version": "1.0.1",
-  "description": "Generate a random email address.",
+  "version": "1.0.2",
+  "description": "Return a random email address.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
@@ -12,19 +12,17 @@
     "prepublish": "npm test"
   },
   "keywords": [
-    "domaon",
-    "tld",
-    "randomly",
-    "random",
-    "rand",
-    "sampling",
-    "generator",
-    "generate",
-    "gen",
-    "network",
     "email",
-    "url",
-    "uri"
+    "domain",
+    "tld",
+    "web",
+    "random",
+    "randomly",
+    "randomize",
+    "chance",
+    "test",
+    "dice",
+    "mock"
   ],
   "license": "MIT",
   "author": {
@@ -47,7 +45,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "random-domains": "1.0.1",
+    "random-domains": "1.0.2",
     "random-lorem": "^1.0.0",
     "to-str": "^1.0.0"
   }
