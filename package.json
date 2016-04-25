@@ -1,6 +1,6 @@
 {
   "name": "random-email",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Return a random email address.",
   "main": "index.js",
   "scripts": {
@@ -45,8 +45,8 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "random-domains": "1.0.2",
-    "random-lorem": "^1.0.0",
+    "random-domains": "1.0.3",
+    "random-lorem": "^1.0.4",
     "to-str": "^1.0.0"
   }
 }

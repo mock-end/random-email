@@ -22,14 +22,24 @@ $ npm install --save random-email
 var randomEmail = require('random-email');
 
 // API
-// - randomEmail();
-// - randomEmail(domain);
+// - randomEmail([options]);
 
+// options
+// - domain
+```
+
+Return a random email with a random domain.
+
+```js
 randomEmail();
-// => jitae@ase.com
+// => 'kawip@piklojzob.gov'
+```
 
-randomEmail('example.me');
-// => mkdcco@example.me
+Optionally specify a domain and the email will be random but the domain will not.
+
+```js
+randomEmail({ domain: 'example.com' });
+// => 'giigjom@example.com'
 ```
 
 ## Related

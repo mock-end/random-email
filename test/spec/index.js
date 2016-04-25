@@ -10,7 +10,7 @@ describe('random-email: ', function () {
     expect(randomEmail()).to.be.match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/);
   });
 
-  it('randomEmail("random.com")', function () {
-    expect(randomEmail('random.com')).to.be.match(/random\.com$/);
+  it('randomEmail({ domain: "random.com" })', function () {
+    expect(randomEmail({ domain: 'random.com' })).to.be.match(/random\.com$/);
   });
 });
